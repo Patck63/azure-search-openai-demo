@@ -45,10 +45,10 @@ param formRecognizerResourceGroupLocation string = location
 param formRecognizerSkuName string = 'S0'
 
 param gptDeploymentName string // Set in main.parameters.json
-param gptDeploymentCapacity int = 30
+param gptDeploymentCapacity int = 10
 param gptModelName string = 'gpt-35-turbo'
 param chatGptDeploymentName string // Set in main.parameters.json
-param chatGptDeploymentCapacity int = 30
+param chatGptDeploymentCapacity int = 10
 param chatGptModelName string = 'gpt-35-turbo'
 
 @description('Id of the user or app to assign application roles')
