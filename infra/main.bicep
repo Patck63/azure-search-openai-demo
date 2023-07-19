@@ -17,7 +17,7 @@ param searchServiceName string = ''
 param searchServiceResourceGroupName string = ''
 param searchServiceResourceGroupLocation string = location
 
-param searchServiceSkuName string = 'free'
+param searchServiceSkuName string = 'standard'
 param searchIndexName string = 'gptkbindex'
 
 param storageAccountName string = ''

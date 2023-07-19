@@ -3,7 +3,7 @@ param location string = resourceGroup().location
 param tags object = {}
 
 param sku object = {
-  name: 'free'
+  name: 'standard'
 }
 
 param authOptions object = {}
@@ -13,9 +13,9 @@ resource search 'Microsoft.Search/searchServices@2021-04-01-preview' = {
   name: name
   location: location
   tags: tags
-  identity: {
-    type: 'SystemAssigned'
-  }
+  // identity: {
+  //   type: 'SystemAssigned'
+  // }
   properties: {
     authOptions: authOptions
     disableLocalAuth: false
@@ -31,7 +31,7 @@ resource search 'Microsoft.Search/searchServices@2021-04-01-preview' = {
     partitionCount: 1
     publicNetworkAccess: 'Enabled'
     replicaCount: 1
-    semanticSearch: semanticSearch
+    // semanticSearch: semanticSearch
   }
   sku: sku
 }
